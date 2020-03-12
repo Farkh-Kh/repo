@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.tasktest</groupId>
-    <artifactId>testtask-ear</artifactId>
+    <artifactId>testtask</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>testtask-ear-1.0</name>
+    <name>testtask-1.0</name>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -17,18 +17,6 @@
     </properties>
     
     <dependencies>
-        <dependency>
-            <groupId>ru.tasktest</groupId>
-            <artifactId>testtask-ejb</artifactId>
-            <version>1.0</version>
-            <type>ejb</type>
-        </dependency>
-        <dependency>
-            <groupId>ru.tasktest</groupId>
-            <artifactId>testtask-web</artifactId>
-            <version>1.0</version>
-            <type>war</type>
-        </dependency>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
