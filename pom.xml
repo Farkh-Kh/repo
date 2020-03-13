@@ -4,9 +4,15 @@
     <groupId>ru.tasktest</groupId>
     <artifactId>testtask</artifactId>
     <version>1.0</version>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <name>testtask-1.0</name>
-    
+	
+    <modules>
+	<module>testtask-web</module>
+	<module>testtask-ear</module>
+	<module>testtask-ejb</module>
+	</modules>
+	
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -15,7 +21,8 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <jakartaee>8.0</jakartaee>
     </properties>
-    
+	
+    <dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
@@ -24,8 +31,10 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-    
+    </dependencyManagement>
+	
      <build>
+	 <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -73,5 +82,6 @@
                 </executions>
             </plugin>
         </plugins>
+		</pluginManagement>
     </build>
 </project>
