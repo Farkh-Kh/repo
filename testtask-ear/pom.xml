@@ -4,7 +4,7 @@
     <groupId>ru.tasktest</groupId>
     <artifactId>testtask-ear</artifactId>
     <version>1.0</version>
-    <packaging>war</packaging>
+    <packaging>ear</packaging>
     <name>testtask-ear-1.0</name>
 
     <properties>
@@ -21,7 +21,6 @@
             <groupId>ru.tasktest</groupId>
             <artifactId>testtask-ejb</artifactId>
             <version>1.0</version>
-            <type>ejb</type>
         </dependency>
         <dependency>
             <groupId>ru.tasktest</groupId>
@@ -53,10 +52,9 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>3.0.2</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
             <plugin>

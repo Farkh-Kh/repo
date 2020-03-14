@@ -8,9 +8,9 @@
     <name>testtask-1.0</name>
 
     <modules>
+        <module>testtask-ejb</module>
         <module>testtask-web</module>
         <module>testtask-ear</module>
-        <module>testtask-ejb</module>
     </modules>
 
     <properties>

@@ -4,7 +4,7 @@
     <groupId>ru.tasktest</groupId>
     <artifactId>testtask-ejb</artifactId>
     <version>1.0</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>testtask-ejb-1.0</name>
 
     <properties>
